@@ -4,6 +4,11 @@ GITHUBTARBALL
     boxen (2.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-dockutil
+  specs:
+    dockutil (0.1.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-dropbox
   specs:
     dropbox (1.1.1)
@@ -100,6 +105,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   boxen (= 2.1.0)
+  dockutil (= 0.1.2)
   dropbox (= 1.1.1)
   gcc (= 1.0.0)
   git (= 1.2.2)

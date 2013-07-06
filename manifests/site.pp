@@ -74,6 +74,7 @@ node default {
     ]:
   }
 
+  include dockutil
   include dropbox
   include github_for_mac
   include iterm2::stable
@@ -85,14 +86,22 @@ node default {
   include sublime_text_2
   include zsh
 
-  # dockutil::item { 'Add iTerm':
-  #       item     => "/Applications/iTerm.app",
-  #       label    => "iTerm",
-  #       action   => "add",
-  #       position => 2,
-  #   }
 
-    
+  dockutil::item { 'Add Chrome':
+        item     => "/Applications/Google Chrome.app",
+        label    => "Chrome",
+        action   => "add",
+        position => 4,
+    }
+
+  dockutil::item { 'Add iTerm':
+        item     => "/Applications/iTerm.app",
+        label    => "iTerm",
+        action   => "add",
+        position => 5,
+    }
+
+
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
     target => $boxen::config::repodir

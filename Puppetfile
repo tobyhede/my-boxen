@@ -34,8 +34,11 @@ github "sudo",       "1.0.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
+github "tunnelblick",	"1.0.1"
 github "skype",			"1.0.3"
 github "spotify", 		"1.0.1"
 github "virtualbox",	"1.0.4"
 github "vagrant",		"2.0.7"
 github "sublime_text_2","1.1.1"
+
+github "dropbox",		"1.1.1"

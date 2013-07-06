@@ -74,12 +74,15 @@ node default {
     ]:
   }
 
+  include tunnelblick
+
   include skype
   include spotify
   include vagrant
   include virtualbox
   include sublime_text_2
-
+  include dropbox
+  
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
     target => $boxen::config::repodir

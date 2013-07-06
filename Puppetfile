@@ -35,6 +35,7 @@ github "sudo",       "1.0.0"
 # https://github.com/boxen.
 
 github "tunnelblick",	"1.0.1"
+github "iterm2",		"1.0.2"
 github "skype",			"1.0.3"
 github "spotify", 		"1.0.1"
 github "virtualbox",	"1.0.4"

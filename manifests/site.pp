@@ -75,6 +75,7 @@ node default {
   }
 
   include tunnelblick
+  include iterm2
 
   include skype
   include spotify

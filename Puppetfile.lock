@@ -4,11 +4,6 @@ GITHUBTARBALL
     boxen (2.1.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-dnsmasq
-  specs:
-    dnsmasq (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
     gcc (1.0.0)
@@ -24,21 +19,6 @@ GITHUBTARBALL
     homebrew (1.1.2)
 
 GITHUBTARBALL
-  remote: boxen/puppet-hub
-  specs:
-    hub (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-nginx
-  specs:
-    nginx (1.4.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-nodejs
-  specs:
-    nodejs (2.2.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-repository
   specs:
     repository (2.0.2)
@@ -49,9 +29,34 @@ GITHUBTARBALL
     ruby (4.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-skype
+  specs:
+    skype (1.0.3)
+
+GITHUBTARBALL
+  remote: boxen/puppet-spotify
+  specs:
+    spotify (1.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-sublime_text_2
+  specs:
+    sublime_text_2 (1.1.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (2.0.7)
+
+GITHUBTARBALL
+  remote: boxen/puppet-virtualbox
+  specs:
+    virtualbox (1.0.4)
 
 GITHUBTARBALL
   remote: cprice404/puppetlabs-inifile
@@ -65,16 +70,17 @@ GITHUBTARBALL
 
 DEPENDENCIES
   boxen (= 2.1.0)
-  dnsmasq (= 1.0.0)
   gcc (= 1.0.0)
   git (= 1.2.2)
   homebrew (= 1.1.2)
-  hub (= 1.0.0)
   inifile (= 0.9.0)
-  nginx (= 1.4.0)
-  nodejs (= 2.2.0)
   repository (= 2.0.2)
   ruby (= 4.1.0)
+  skype (= 1.0.3)
+  spotify (= 1.0.1)
   stdlib (= 4.0.2)
+  sublime_text_2 (= 1.1.1)
   sudo (= 1.0.0)
+  vagrant (= 2.0.7)
+  virtualbox (= 1.0.4)
 

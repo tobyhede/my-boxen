@@ -74,16 +74,25 @@ node default {
     ]:
   }
 
-  include tunnelblick
-  include iterm2
-
+  include dropbox
+  include github_for_mac
+  include iterm2::stable
   include skype
   include spotify
+  include tunnelblick
   include vagrant
   include virtualbox
   include sublime_text_2
-  include dropbox
-  
+  include zsh
+
+  # dockutil::item { 'Add iTerm':
+  #       item     => "/Applications/iTerm.app",
+  #       label    => "iTerm",
+  #       action   => "add",
+  #       position => 2,
+  #   }
+
+    
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
     target => $boxen::config::repodir

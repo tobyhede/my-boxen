@@ -22,24 +22,25 @@ github "boxen", "2.1.0"
 github "gcc",        "1.0.0"
 github "git",        "1.2.2"
 github "homebrew",   "1.1.2"
-# github "hub",        "1.0.0"
 github "inifile",    "0.9.0", :repo => "cprice404/puppetlabs-inifile"
-# github "nginx",      "1.4.0"
-# github "nodejs",     "2.2.0"
 github "repository", "2.0.2"
 github "ruby",       "4.1.0"
 github "stdlib",     "4.0.2", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
 
+
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
-
-github "tunnelblick",	"1.0.1"
+github "dockutil",		"0.1.2"
+github "dropbox",		"1.1.1"
 github "iterm2",		"1.0.2"
+github "github_for_mac","1.0.1"
+github "osx",			"1.4.0"
 github "skype",			"1.0.3"
 github "spotify", 		"1.0.1"
-github "virtualbox",	"1.0.4"
-github "vagrant",		"2.0.7"
 github "sublime_text_2","1.1.1"
+github "tunnelblick",	"1.0.1"
+github "vagrant",		"2.0.7"
+github "virtualbox",	"1.0.4"
+github "zsh",			"1.0.0"
 
-github "dropbox",		"1.1.1"

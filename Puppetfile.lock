@@ -19,9 +19,24 @@ GITHUBTARBALL
     git (1.2.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-github_for_mac
+  specs:
+    github_for_mac (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.1.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-iterm2
+  specs:
+    iterm2 (1.0.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (1.4.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-repository
@@ -69,6 +84,11 @@ GITHUBTARBALL
     virtualbox (1.0.4)
 
 GITHUBTARBALL
+  remote: boxen/puppet-zsh
+  specs:
+    zsh (1.0.0)
+
+GITHUBTARBALL
   remote: cprice404/puppetlabs-inifile
   specs:
     inifile (0.9.0)
@@ -83,8 +103,11 @@ DEPENDENCIES
   dropbox (= 1.1.1)
   gcc (= 1.0.0)
   git (= 1.2.2)
+  github_for_mac (= 1.0.1)
   homebrew (= 1.1.2)
   inifile (= 0.9.0)
+  iterm2 (= 1.0.2)
+  osx (= 1.4.0)
   repository (= 2.0.2)
   ruby (= 4.1.0)
   skype (= 1.0.3)
@@ -95,4 +118,5 @@ DEPENDENCIES
   tunnelblick (= 1.0.1)
   vagrant (= 2.0.7)
   virtualbox (= 1.0.4)
+  zsh (= 1.0.0)
 

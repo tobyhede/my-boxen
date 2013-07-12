@@ -65,6 +65,12 @@ node default {
   include ruby::1_9_3
   include ruby::2_0_0
 
+  class { 'ruby::global':
+    version => '2.0.0'
+  }
+  
+
+
   # common, useful packages
   package {
     [
@@ -78,18 +84,22 @@ node default {
   include dropbox
   include github_for_mac
   include iterm2::stable
+  include macvim  
   include skype
   include spotify
   include tunnelblick
   include vagrant
   include virtualbox
   include sublime_text_2
+  include steam
   include zsh
 
+  # # include go
+  # include go::1_1
 
   dockutil::item { 'Add Chrome':
         item     => "/Applications/Google Chrome.app",
-        label    => "Chrome",
+        label    => "Google Chrome",
         action   => "add",
         position => 4,
     }

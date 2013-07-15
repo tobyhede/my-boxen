@@ -13,7 +13,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "2.1.0"
+github "boxen", "2.3.6"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -36,6 +36,7 @@ github "dropbox",		"1.1.1"
 github "iterm2",		"1.0.2"
 github "github_for_mac","1.0.1"
 github "macvim",		"1.0.0"
+github "firefox",		"1.1.1"
 github "osx",			"1.4.0"
 github "skype",			"1.0.3"
 github "spotify", 		"1.0.1"

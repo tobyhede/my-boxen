@@ -68,8 +68,18 @@ node default {
   class { 'ruby::global':
     version => '2.0.0'
   }
-  
 
+  ruby::gem { "bundler for ${version}":
+    gem     => 'bundler',
+    ruby    => $version,
+    version => '~> 1.3.0'
+  }
+
+  ruby::gem { "rails for ${version}":
+    gem     => 'rails',
+    ruby    => $version,
+    version => '~> 4.0.0'
+  }
 
   # common, useful packages
   package {
@@ -84,7 +94,8 @@ node default {
   include dropbox
   include github_for_mac
   include iterm2::stable
-  include macvim  
+  include firefox
+  include macvim
   include skype
   include spotify
   include tunnelblick
@@ -96,6 +107,7 @@ node default {
 
   # # include go
   # include go::1_1
+  # curl -Lo- https://bit.ly/janus-bootstrap | bash
 
   dockutil::item { 'Add Chrome':
         item     => "/Applications/Google Chrome.app",
@@ -104,12 +116,26 @@ node default {
         position => 4,
     }
 
+  dockutil::item { 'Add Firefox':
+        item     => "/Applications/Firefox.app",
+        label    => "Firefox",
+        action   => "add",
+        position => 5,
+  }
+
   dockutil::item { 'Add iTerm':
         item     => "/Applications/iTerm.app",
         label    => "iTerm",
         action   => "add",
-        position => 5,
+        position => 6,
     }
+
+  dockutil::item { 'Add MacVim':
+        item     => "/opt/boxen/homebrew/Cellar/macvim/7.3-66/MacVim.app",
+        label    => "MacVim",
+        action   => "add",
+        position => 7,
+  }
 
 
   file { "${boxen::config::srcdir}/our-boxen":

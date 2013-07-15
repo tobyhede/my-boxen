@@ -46,7 +46,12 @@ Puppet::Type.type(:package).provide(:appdmg_eula, :parent => Puppet::Provider::P
 
   def self.installapp(source, name, orig_source)
     appname = File.basename(source);
-    ditto "--rsrc", source, "/Applications/#{appname}"
+    target = "/Applications/#{appname}"
+    ditto "--rsrc", source, "#{target}"
+    chmod "-R", "a+xr", "#{target}"
+    chown "-R", "#{Facter[:boxen_user].value}:staff", "#{target}"
+    # ditto "--rsrc", source, "/Applications/#{appname}"
+    
     File.open("/var/db/.puppet_appdmg_installed_#{name}", "w") do |t|
       t.print "name: '#{name}'\n"
       t.print "source: '#{orig_source}'\n"

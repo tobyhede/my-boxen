@@ -69,15 +69,15 @@ node default {
     version => '2.0.0'
   }
 
-  ruby::gem { "bundler for ${version}":
+  ruby::gem { "bundler":
     gem     => 'bundler',
-    ruby    => $version,
+    ruby    =>  '2.0.0',
     version => '~> 1.3.0'
   }
 
-  ruby::gem { "rails for ${version}":
+  ruby::gem { "rails":
     gem     => 'rails',
-    ruby    => $version,
+    ruby    => '2.0.0',
     version => '~> 4.0.0'
   }
 

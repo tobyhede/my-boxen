@@ -96,6 +96,7 @@ node default {
   include iterm2::stable
   include firefox
   include macvim
+  include mysql
   include skype
   include spotify
   include tunnelblick

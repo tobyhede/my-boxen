@@ -68,6 +68,7 @@ node default {
   class { 'ruby::global':
     version => '2.0.0'
   }
+  ruby::version {"1.9.3-p374": }
 
   ruby::gem { "bundler":
     gem     => 'bundler',
@@ -97,14 +98,18 @@ node default {
   include firefox
   include macvim
   include mysql
+  include postgresql
+  include redis
   include skype
   include spotify
+  include sysctl
   include tunnelblick
   include vagrant
   include virtualbox
   include sublime_text_2
   include steam
   include zsh
+  include ohmyzsh
 
   # # include go
   # include go::1_1

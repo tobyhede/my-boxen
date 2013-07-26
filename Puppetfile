@@ -23,6 +23,7 @@ github "gcc",        "1.0.0"
 github "git",        "1.2.2"
 github "homebrew",   "1.1.2"
 github "inifile",    "0.9.0", :repo => "cprice404/puppetlabs-inifile"
+github "openssl",    "1.0.0"
 github "repository", "2.0.2"
 github "ruby",       "4.1.0"
 github "stdlib",     "4.0.2", :repo => "puppetlabs/puppetlabs-stdlib"
@@ -31,6 +32,7 @@ github "sudo",       "1.0.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+github "adium", "1.1.1"
 github "dockutil",		"0.1.2"
 github "dropbox",		"1.1.1"
 github "iterm2",		"1.0.2"

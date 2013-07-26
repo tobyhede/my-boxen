@@ -69,6 +69,7 @@ node default {
     version => '2.0.0'
   }
   ruby::version {"1.9.3-p374": }
+  ruby::version {"1.9.3-p448": }
 
   ruby::gem { "bundler":
     gem     => 'bundler',
@@ -91,6 +92,9 @@ node default {
     ]:
   }
 
+  include openssl
+
+  include adium
   include dockutil
   include dropbox
   include github_for_mac

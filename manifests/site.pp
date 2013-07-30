@@ -103,6 +103,7 @@ node default {
   include macvim
   include mysql
   include postgresql
+  include pow
   include redis
   include skype
   include spotify

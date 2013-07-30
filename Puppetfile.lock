@@ -79,6 +79,11 @@ GITHUBTARBALL
     postgresql (1.0.4)
 
 GITHUBTARBALL
+  remote: boxen/puppet-pow
+  specs:
+    pow (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-redis
   specs:
     redis (1.0.0)
@@ -177,6 +182,7 @@ DEPENDENCIES
   openssl (= 1.0.0)
   osx (= 1.4.0)
   postgresql (= 1.0.4)
+  pow (= 1.0.0)
   redis (= 1.0.0)
   repository (= 2.0.2)
   ruby (= 4.1.0)

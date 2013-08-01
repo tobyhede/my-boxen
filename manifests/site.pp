@@ -113,6 +113,7 @@ node default {
   include virtualbox
   include sublime_text_2
   include steam
+  include transmission
   include zsh
   include ohmyzsh
 

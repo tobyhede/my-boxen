@@ -118,7 +118,7 @@ node default {
   include ohmyzsh
 
   # # include go
-  # include go::1_1
+  #include go::1_1
   # curl -Lo- https://bit.ly/janus-bootstrap | bash
 
   dockutil::item { 'Add Chrome':

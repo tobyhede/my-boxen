@@ -141,12 +141,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (2.0.7)
+    vagrant (2.0.10)
 
 GITHUBTARBALL
   remote: boxen/puppet-virtualbox
   specs:
-    virtualbox (1.0.4)
+    virtualbox (1.0.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-zsh
@@ -200,7 +200,7 @@ DEPENDENCIES
   sysctl (= 1.0.0)
   transmission (= 1.0.0)
   tunnelblick (= 1.0.1)
-  vagrant (= 2.0.7)
-  virtualbox (= 1.0.4)
+  vagrant (= 2.0.10)
+  virtualbox (= 1.0.5)
   zsh (= 1.0.0)
 

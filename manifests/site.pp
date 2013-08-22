@@ -98,6 +98,7 @@ node default {
   include dockutil
   include dropbox
   include github_for_mac
+  include heroku
   include iterm2::stable
   include firefox
   include macvim

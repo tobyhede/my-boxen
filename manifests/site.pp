@@ -95,6 +95,7 @@ node default {
   include openssl
 
   include adium
+  include chrome
   include dockutil
   include dropbox
   include github_for_mac

@@ -146,7 +146,7 @@ node default {
     }
 
   dockutil::item { 'Add MacVim':
-        item     => "/opt/boxen/homebrew/Cellar/macvim/7.3-66/MacVim.app",
+        item     => "/opt/boxen/homebrew/Cellar/macvim/7.4-71/MacVim.app",
         label    => "MacVim",
         action   => "add",
         position => 7,

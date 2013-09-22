@@ -5,7 +5,7 @@ require gcc
 Exec {
   group       => 'staff',
   logoutput   => on_failure,
-  user        => $luser,
+  user        => $boxen_user,
 
   path => [
     "${boxen::config::home}/rbenv/shims",
@@ -20,7 +20,7 @@ Exec {
 
   environment => [
     "HOMEBREW_CACHE=${homebrew::config::cachedir}",
-    "HOME=/Users/${::luser}"
+    "HOME=/Users/${::boxen_user}"
   ]
 }
 
@@ -34,12 +34,23 @@ Package {
   require  => Class['homebrew']
 }
 
+#Repository {
+  #provider => git,
+  #extra    => [
+    #'--recurse-submodules'
+  #],
+  #require  => File["${boxen::config::bindir}/bin/boxen-git-credential"],
+  #config   => {
+    #'credential.helper' => "${boxen::config::bindir}/boxen-git-credential"
+  #}
+#}
+
 Repository {
   provider => git,
   extra    => [
     '--recurse-submodules'
   ],
-  require  => Class['git'],
+  require  => File["${boxen::config::bindir}/boxen-git-credential"],
   config   => {
     'credential.helper' => "${boxen::config::bindir}/boxen-git-credential"
   }
@@ -53,7 +64,7 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
   # core modules, needed for most things
-  # include dnsmasq
+  #include dnsmasq
   include git
 
   # fail if FDE is not enabled
@@ -69,7 +80,7 @@ node default {
     version => '2.0.0'
   }
   ruby::version {"1.9.3-p374": }
-  ruby::version {"1.9.3-p448": }
+  #ruby::version {"1.9.3-p448": }
 
   ruby::gem { "bundler":
     gem     => 'bundler',
@@ -117,6 +128,7 @@ node default {
   include sublime_text_2
   include steam
   include transmission
+  include vlc
   include zsh
   include ohmyzsh
 
